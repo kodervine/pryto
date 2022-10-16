@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         "red-blob": "url('/src/images/redblob.svg')",
+        "straight-wavy": "url('/src/images/straight-wavy.svg')",
       },
     },
   },
