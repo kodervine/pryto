@@ -21,7 +21,10 @@
           <span class="font-semibold text-xl tracking-tight">Pryto</span>
         </div>
         <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded">
+          <button
+            class="flex items-center px-3 py-2 border rounded"
+            id="menu-btn"
+          >
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -33,7 +36,8 @@
           </button>
         </div>
         <div
-          class="w-full block flex-grow lg:flex lg:items-center lg:ml-60 lg:justify-around lg:w-auto"
+          class="w-full hidden flex-grow lg:flex lg:items-center lg:ml-60 lg:justify-around lg:w-auto"
+          id="mobile-nav-container"
         >
           <div class="text-sm lg:flex-grow">
             <a
@@ -405,7 +409,7 @@
     </svg>
     <footer class="flex flex-col bg-[#22385E] text-white pb-5">
       <article
-        class="w-full flex flex-col lg:flex-row justify-evenly items-center py-4 lg:py-24 text-base lg:text-2xl"
+        class="w-full flex flex-col lg:flex-row justify-evenly items-center py-4 lg:py-6 text-base lg:text-2xl"
       >
         <div>
           <img src="/src/images/logo-image.png" alt="" />
@@ -440,9 +444,11 @@
           </button>
         </form>
       </article>
-      <p class="text-center text-base lg:text-2xl">
-        &copy; Pryto - exchange plan
+      <p class="text-center text-base lg:text-lg">
+        &copy;2022 Pryto - exchange plan
       </p>
     </footer>
+
+    <script src="/src/js/home.js"></script>
   </body>
 </html>
