@@ -9,6 +9,7 @@
       href="/src/images/logo-image.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,7 +18,7 @@
     <title>Pryto home-page</title>
   </head>
   <body class="font-openSans">
-    <header>
+    <header data-aos="fade-down" data-aos-once="true">
       <nav
         class="flex items-center justify-between flex-wrap bg-white p-6 lg:px-16"
       >
@@ -84,9 +85,13 @@
     <!-- Main body -->
 
     <!-- Hero section -->
-    <section class="flex flex-col-reverse lg:flex-row h-3/4 justify-between">
+    <section class="flex flex-col lg:flex-row h-3/4 justify-between">
       <!-- Left div with text -->
-      <div class="px-8 flex flex-col item-around justify-center">
+      <div
+        class="px-8 flex flex-col item-around justify-center"
+        data-aos="fade-right"
+        data-aos-once="true"
+      >
         <h4 class="text-red-700 text-base lg:text-2xl font-semibold uppercase">
           Welcome
         </h4>
@@ -104,7 +109,7 @@
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts
         </p>
-        <div class="flex gap-5">
+        <div class="flex gap-5 mb-8 lg:mb-auto">
           <button
             class="text-xs md:text-base font-semibold px-6 lg:px-10 py-3 lg:py-4 leading-none border rounded-full bg-red-700 text-white border-none shadow-2xl hover:border-transparent hover:text-white hover:bg-blue-900 mt-4 lg:mt-0"
           >
@@ -124,6 +129,8 @@
           class="w-full lg:w-3/4"
           src="/src/images/crypto-portfolio-animate.svg"
           alt="crypto-animate"
+          data-aos="fade-left"
+          data-aos-once="true"
         />
       </div>
     </section>
@@ -152,7 +159,11 @@
       class="flex flex-col lg:flex-row h-3/4 justify-between px-4 -mt-[400px] lg:-mt-[1000px]"
     >
       <!-- Left div with text -->
-      <div class="px-8 flex-1 flex flex-col item-around justify-center z-10">
+      <div
+        class="px-8 flex-1 flex flex-col item-around justify-center z-10"
+        data-aos-once="true"
+        data-aos="fade-down"
+      >
         <h4 class="text-red-700 text-base lg:text-2xl font-semibold uppercase">
           Our services
         </h4>
@@ -186,6 +197,8 @@
         <!-- First grid container -->
         <div
           class="flex flex-col justify-around p-8 rounded-3xl shadow-sm shadow-gray-500/50 bg-white hover:bg-gradient-to-b from-red-500 to-red-900 hover:text-gray-200"
+          data-aos-once="true"
+          data-aos="fade-left"
         >
           <!-- Icons -->
           <div class="py-4 lg:py-8">
@@ -204,6 +217,8 @@
         <!-- Second grid -->
         <div
           class="row-span-0 lg:row-span-1 self-center flex flex-col justify-around p-8 rounded-3xl shadow-sm shadow-gray-500/50 bg-white hover:bg-gradient-to-b from-red-500 to-red-900 hover:text-gray-200"
+          data-aos-once="true"
+          data-aos="fade-left"
         >
           <!-- Icons -->
           <div class="py-4 lg:py-8">
@@ -224,6 +239,8 @@
         <!-- Third grid -->
         <div
           class="flex flex-col justify-around p-8 rounded-3xl shadow-sm shadow-gray-500/50 bg-white hover:bg-gradient-to-b from-red-500 to-red-900 hover:text-gray-200"
+          data-aos-once="true"
+          data-aos="fade-left"
         >
           <!-- Icons -->
           <div class="py-4 lg:py-8">
@@ -319,10 +336,17 @@
     </section>
 
     <!-- The waves -->
-    <img src="/src/images/straight-wavy.svg" alt="" />
+    <img
+      src="/src/images/straight-wavy.svg"
+      data-aos-once="true"
+      data-aos="fade-up"
+      alt=""
+    />
     <!-- Happy user bg-red-800 -->
     <section
       class="flex flex-col justify-center items-center lg:py-16 bg-gradient-to-b from-[#C83C5A] to-[#AF2951] text-white pb-10"
+      data-aos-once="true"
+      data-aos="fade-up"
     >
       <h5
         class="uppercase lg:text-2xl font-semibold text-gray-300 pb-3 pt-10 lg:pb-10"
@@ -337,17 +361,17 @@
         <!-- First review -->
         <div class="flex flex-col items-center">
           <p class="font-bold text-lg lg:text-4xl">+7,000</p>
-          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Review</p>
+          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Reviews</p>
         </div>
-        <!-- Second review -->
+        <!-- Second reviews -->
         <div class="flex flex-col items-center">
           <p class="font-bold text-lg lg:text-4xl">+7,000</p>
-          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Review</p>
+          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Reviews</p>
         </div>
-        <!-- Third review -->
+        <!-- Third reviews -->
         <div class="flex flex-col items-center">
           <p class="font-bold text-lg lg:text-4xl">+7,000</p>
-          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Review</p>
+          <p class="text-[12px] lg:text-2xl text-gray-300">Positive Reviews</p>
         </div>
       </div>
     </section>
@@ -368,7 +392,11 @@
       class="flex flex-col-reverse lg:flex-row h-3/4 justify-between -mt-[150px] lg:-mt-[400px] pb-20"
     >
       <!-- Left div with text -->
-      <div class="px-8 flex-1 flex flex-col item-around justify-center z-10">
+      <div
+        class="px-8 flex-1 flex flex-col item-around justify-center z-10"
+        data-aos-once="true"
+        data-aos="fade-right"
+      >
         <h4 class="text-red-700 text-base lg:text-2xl font-semibold uppercase">
           Our services
         </h4>
@@ -396,7 +424,11 @@
       </div>
 
       <!-- Right hero image -->
-      <div class="w-full flex justify-center flex-1">
+      <div
+        class="w-full flex justify-center flex-1"
+        data-aos-once="true"
+        data-aos="fade-left"
+      >
         <img
           class="w-full lg:w-3/4"
           src="/src/images/Price-cuate.svg"
@@ -455,5 +487,12 @@
     </footer>
 
     <script src="/src/js/home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
