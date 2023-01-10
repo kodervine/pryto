@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/images/logo-image.png" type="image/icon type" />
+    <link rel="stylesheet" href="app.css" />
+    <title>| Pryto |</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <img src="/src/images/logo-image.png" alt="" />
+        <h1>Pryto</h1>
+      </div>
+      <p>See the live cryptocurrency price in naira</p>
+    </header>
+
+    <main class="main-body">
+      <h3>Current Time</h3>
+      <p id="show-date"></p>
+      <!-- Circle to display the bitcoin -->
+      <div class="price-circle">
+        <p>Type amount</p>
+        <input type="number" name="" id="input-coin" value="1" />
+        <select name="crypto-id" id="crypto-id">
+          <option value="">Choose Coin</option>
+          <option value="ETH">BTC</option>
+          <option value="ETH">ETH</option>
+          <option value="ETH">BNB</option>
+        </select>
+      </div>
+
+      <!-- Price  -->
+      <section class="currency-price-container">
+        <div>
+          <p class="usd-price">USD Price</p>
+          <p id="usd-id" class="currency-price">--</p>
+        </div>
+        <div>
+          <p class="naira-price">Naira price</p>
+          <p id="naira-id" class="currency-price">--</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <img
+          src="/src/images/[latest] coingecko_logo_without_text.png"
+          alt="Coin gecko"
+        />
+        <a href="https://www.coingecko.com/en/api"
+          >Data powered by Coingecko API</a
+        >
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
