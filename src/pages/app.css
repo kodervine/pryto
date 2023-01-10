@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-bg-color: rgb(27, 21, 69);
+  --primary-red-color: darkred;
+  --primary-green-color: darkgreen;
+}
+
+body {
+  width: 40%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: white;
+  border: 6px solid var(--primary-bg-color);
+  border-style: double;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 5%;
+  color: var(--primary-bg-color);
+  font-family: "Bree Serif", serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 38px;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.price-circle {
+  height: 200px;
+  width: 200px;
+  border: 5px solid var(--primary-bg-color);
+  border-radius: 50%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-circle > p:nth-of-type(2) {
+  font-size: 40px;
+}
+
+#crypto-id {
+  border: 2px solid var(--primary-bg-color);
+  outline: none;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#input-coin {
+  width: 50%;
+  font-size: 40px;
+  border: none;
+  border-bottom: 1px solid var(--primary-bg-color);
+  color: var(--primary-bg-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+}
+
+.currency-price-container {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.currency-price {
+  color: var(--primary-bg-color);
+  /* color: white; */
+  padding: 10px 15px 10px 10px;
+  border-bottom: 2px solid var(--primary-bg-color);
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: copy;
+}
+
+.usd-price {
+  color: var(--primary-red-color);
+  font-size: 20px;
+}
+
+.naira-price {
+  color: var(--primary-green-color);
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+footer img {
+  width: 40px;
+}
+
+@media (max-width: 798px) {
+  body {
+    width: 90%;
+  }
+}
